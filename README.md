@@ -27,3 +27,7 @@ x = c.baz # raises `AtrributeError
 * Enable the ecmapy code to work with linters, type-checkers, and IDE extensions.
 
 * Enable seamless integration with existing CI/CD workflows.
+
+## License
+
+This project is licensed under the [GNU Affero General Public License](LICENSE) (AGPLv3).
