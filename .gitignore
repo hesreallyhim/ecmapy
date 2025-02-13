@@ -1,1 +1,17 @@
+# The virtual environment
 venv/
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
+__pycache__/
+
+# IDE settings
+.vscode/
+
+# Python version management
+.python-version
+
+# Other caches
+.*cache/

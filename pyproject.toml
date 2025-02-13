@@ -1,0 +1,35 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ecmapy"
+version = "0.0.1.dev0"
+description = "A bi-directional (partial) transpiler for enabling some JS syntax in python (and vice versa)"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Really Him", email = "hesreallyhim@proton.me" }
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU Affero General Public License v3",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+]
+keywords = ["python", "ECMAScript", "transpiler"]
+dependencies = [
+    "astor",
+]
+
+[project.urls]
+Homepage = "https://github.com/hesreallyhim/ecmapy"
+Repository = "https://github.com/hesreallyhim/ecmapy.git"
+
+[tool.hatch.build.targets.wheel]
+packages = ["ecmapy"]
+
+[tool.hatch.version]
+path = "ecmapy/__init__.py"
